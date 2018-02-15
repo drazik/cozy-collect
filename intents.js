@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d150b530ae7ce2b9b6f3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1af7ff7121102e6a6695"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -90705,7 +90705,7 @@ var initializeRegistry = exports.initializeRegistry = function initializeRegistr
     }).then(function (context) {
       var konnectorsToExclude = !!context.attributes && context.attributes.exclude_konnectors;
       var filteredKonnectors = context.attributes && context.attributes.debug ? konnectors : konnectors.filter(function (k) {
-        return !['barclays136', 'creditagricole', 'debug', 'enedis'].includes(k.slug);
+        return !['creditagricole', 'debug', 'enedis'].includes(k.slug);
       });
 
       if (konnectorsToExclude && konnectorsToExclude.length) {
